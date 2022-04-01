@@ -1,6 +1,20 @@
-controllers:
-    resource: ../src/Controller/
+api_login_check:
+    path: /api/login_check
+
+controllers_v1:
+    resource: ../src/Controller/v1
     type: annotation
+    prefix: /api/v1
+
+#controllers_v2:
+#    resource: ../src/Controller/v2
+#    type: annotation
+#    prefix: v2
+
+#controllers_v3:
+#    resource: ../src/Controller/v3
+#    type: annotation
+#    prefix: v3
 
 kernel:
     resource: ../src/Kernel.php
